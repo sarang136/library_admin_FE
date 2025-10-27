@@ -10,9 +10,10 @@ import { imageApi } from "./Api/ImageApi";
 import { enquiryApi } from "./Api/EnquiryApi";
 import { bookingApi } from "./Api/BookingApi";
 import { updatesApi } from "./Api/UpdateApi";
+import { Chargeapi } from "./api/Chargeapi";
 
-import authReducer from "./Slices/AuthSlice";
-import { Chargeapi } from "./Api/Chargeapi";
+import authReducer from './Slices/AuthSlice'
+// import { Chargeapi } from "./Api/Chargeapi";
 
 const store = configureStore({
   reducer: {

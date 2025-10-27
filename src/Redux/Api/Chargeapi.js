@@ -2,7 +2,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const Chargeapi = createApi({
-  reducerPath: "chargeApi",
+  reducerPath: "chargeapi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://library-1-xu20.onrender.com",
     credentials: "include",
