@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+.sidebar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px; 
+  background-color: #1d4ed8; 
+  z-index: 40;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+
