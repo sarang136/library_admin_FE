@@ -11,8 +11,8 @@ import { enquiryApi } from "./Api/EnquiryApi";
 import { bookingApi } from "./Api/BookingApi";
 import { updatesApi } from "./Api/UpdateApi";
 
-import authReducer from "./Slices/authSlice";
-import { Chargeapi } from "./api/Chargeapi";
+import authReducer from "./Slices/AuthSlice";
+import { Chargeapi } from "./Api/Chargeapi";
 
 const store = configureStore({
   reducer: {
@@ -45,4 +45,4 @@ const store = configureStore({
       .concat(Chargeapi.middleware), 
 });
 
-export default store;
+export default store
